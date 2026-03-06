@@ -1,17 +1,20 @@
-describe('empty spec', () => {
+describe('J. Worden Asphalt Paving', () => {
   beforeEach(() => {
     cy.visit('/')
   })
 
-  it('displays the resources text', () => {
-    cy.get('h2')
-    .contains('This is a bare-bones Angular project that has everything you need to quickly deploy it to Netlify');
+  it('displays the hero heading', () => {
+    cy.get('h1')
+    .contains('Professional Asphalt Paving You Can Trust');
   })
-  it('renders the image', () => {
-    cy.get('img')
-    .should('be.visible')
-    .and(($img) => {
-      expect($img[0].naturalWidth).to.be.greaterThan(0);
-    })
+
+  it('displays the services section', () => {
+    cy.get('#services')
+    .should('be.visible');
+  })
+
+  it('displays the contact form', () => {
+    cy.get('.contact-form')
+    .should('be.visible');
   })
 })

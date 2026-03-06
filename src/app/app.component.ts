@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['../demo-styling.css']
 })
 export class AppComponent {
-  title = 'angular-quickstart';
+  title = 'J. Worden Asphalt Paving';
+  menuOpen = false;
 }
